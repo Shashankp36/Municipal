@@ -1,0 +1,23 @@
+const host = "https://gms-api-three.vercel.app";
+
+export const loginAPI = `${host}/api/auth/login`;
+export const registerAPI = `${host}/api/auth/register`;
+export const superloginAPI = `${host}/api/auth/super-login`;
+export const superregisterAPI = `${host}/api/auth/super-register`;
+export const adminloginAPI = `${host}/api/auth/admin-login`;
+export const adminregisterAPI = `${host}/api/auth/admin-register`;
+export const raiseproblem = `${host}/api/v1/add-problem`;
+export const add_image = `${host}/api/v1/upload`;
+export const getproblem = `${host}/api/v2/getproblem`;
+export const getadmin = `${host}/api/auth/getadmin`;
+export const getuser = `${host}/api/auth/getuser`;
+export const delete_user = `${host}/api/auth/deleteuser`;
+export const getproblemadmin = `${host}/api/v2/getproblem-admin`;
+export const getproblemsuper = `${host}/api/v2/getproblem-super`;
+export const status_update = `${host}/api/v2/updatestatus`;
+export const delete_admin = `${host}/api/auth/delete`;
+export const getUserCount = `${host}/api/user-count`;
+export const getAdminCount = `${host}/api/admin-count`;
+export const getProblemCount = `${host}/api/problem-count`;
+export const Problemplus = `${host}/getproblem`;
+export const Role = `${host}/check-auth`;

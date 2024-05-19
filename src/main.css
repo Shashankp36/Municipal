@@ -1,0 +1,72 @@
+
+
+.background {
+    background-image: url('images/imgback.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Add position relative */
+  }
+  
+  .background::before { /* Pseudo-element for overlay */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity here */
+  }
+  
+  .content {
+    text-align: center;
+    color: white; /* Set text color */
+    position: relative; /* Add position relative */
+    z-index: 1; /* Ensure content is on top of the overlay */
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+  }
+  /* p{
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    justify-content: center;
+  } */
+  h3 {
+    color: rgb(141, 174, 169); 
+  }
+  @keyframes gradientAnimation {
+    0% {
+      color: red; 
+    }
+    50% {
+      color: orange;
+    }
+    100% {
+      color: yellow; 
+    }
+  }
+  
+  h1 {
+    background: linear-gradient(to right, red, orange, yellow); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    animation: gradientAnimation 5s infinite; 
+  }
+  

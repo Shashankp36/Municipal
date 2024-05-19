@@ -1,0 +1,59 @@
+/* Home.css */
+
+.content {
+  padding: 100px; /* Add padding for better spacing */
+}
+
+.welcome {
+  text-align: center;
+  margin-top: 20px; /* Adjust for better spacing */
+  color: white;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.problem-item {
+  margin-bottom: 10px;
+}
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+}
+
+.custom-button {
+  background-color: #8369a4; /* Primary color */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-button:hover {
+  background-color: #0056b3; /* Darker shade for hover */
+  transform: scale(1.05);
+}
+
+.custom-button:active {
+  background-color: #004080; /* Even darker for active state */
+  transform: scale(1);
+}
