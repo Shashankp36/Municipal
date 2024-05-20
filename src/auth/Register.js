@@ -62,8 +62,8 @@ function Register() {
                 <input type="email" name="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} />
                 <input type="password" name="password" placeholder="Create Password" autoComplete="on" value={password} onChange={(e) => setPassword(e.target.value)} />
                 <input type="password" name="confirmPassword" placeholder="Confirm Password" autoComplete="on" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
-                <input type="text" name="aadharNumber" placeholder="Aadhar Number" value={aadharNumber} onChange={(e) => setAadharNumber(e.target.value)} />
-                <input type="text" name="phoneNumber" placeholder="Phone Number" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
+                <input type="text" name="aadharNumber" placeholder="Aadhar Number" value={aadharNumber} onChange={(e) => setAadharNumber(e.target.value)} minLength={12} maxLength={12} />
+                <input type="text" name="phoneNumber" placeholder="Phone Number" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} minLength={10} maxLength={10} />
                 <button type="submit" className="btn btn-success" onClick={validate}>Sign up</button>
                 <p className="signup">
                   Already have an account ?
