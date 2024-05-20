@@ -40,7 +40,7 @@ function Register() {
         delete data.data.user.password;
         localStorage.setItem("user", JSON.stringify(data.data.user));
         toast.success(data.data.message, toastOptions);
-        navigate("/");
+        navigate("/login");
       } else {
         toast.error(data.data.message, toastOptions);
       }
